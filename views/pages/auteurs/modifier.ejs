@@ -1,0 +1,27 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+
+  <div class="card">
+
+    <h2>Modifier Auteur</h2>
+
+    <form method="POST" action="/auteurs/<%= auteur.id %>/modifier" class="form">
+
+      <label>Nom</label>
+      <input type="text" name="nom" value="<%= auteur.nom %>" required>
+
+      <label>Prénom</label>
+      <input type="text" name="prenom" value="<%= auteur.prenom %>" required>
+
+
+      <button class="btn btn-primary">Modifier</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<%- include('../../partials/footer') %>

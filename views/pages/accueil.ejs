@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>📚 Gestion de Bibliothèque</h1>
+    <p>Application CRUD moderne avec Express + EJS + PostgreSQL</p>
+  </div>
+
+  <!-- CARDS STATS -->
+  <div class="dashboard">
+
+    <div class="card-box">
+      <h2>📖 Livres</h2>
+      <p>Gérer tous les livres de la bibliothèque</p>
+      <a href="/livres" class="btn btn-primary">Voir livres</a>
+    </div>
+
+    <div class="card-box">
+      <h2>👨‍🏫 Auteurs</h2>
+      <p>Gérer les auteurs et leurs informations</p>
+      <a href="/auteurs" class="btn btn-primary">Voir auteurs</a>
+    </div>
+
+  </div>
+
+</div>
+
+<%- include('../partials/footer') %>

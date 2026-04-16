@@ -1,0 +1,30 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+  <div class="card">
+
+    <h2>Ajouter Livre</h2>
+
+    <form method="POST" action="/livres/ajouter">
+
+      <input name="titre" placeholder="Titre" required>
+
+      <select name="auteur_id" required>
+        <% auteurs.forEach(a => { %>
+          <option value="<%= a.id %>">
+            <%= a.prenom %> <%= a.nom %>
+          </option>
+        <% }) %>
+      </select>
+
+      <input name="genre" placeholder="Genre" required>
+
+      <button class="btn btn-primary">Ajouter</button>
+
+    </form>
+
+  </div>
+</div>
+
+<%- include('../../partials/footer') %>

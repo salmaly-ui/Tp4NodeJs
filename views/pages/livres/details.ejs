@@ -1,0 +1,18 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+  <div class="card">
+
+    <h2>Détails Livre</h2>
+
+    <p><b>Titre :</b> <%= livre.titre %></p>
+    <p><b>Genre :</b> <%= livre.genre %></p>
+    <p><b>ISBN :</b> <%= livre.isbn %></p>
+
+    <a href="/livres" class="btn btn-primary">Retour</a>
+
+  </div>
+</div>
+
+<%- include('../../partials/footer') %>

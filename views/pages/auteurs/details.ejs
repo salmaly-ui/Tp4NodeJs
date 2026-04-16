@@ -1,0 +1,20 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+
+  <div class="card">
+
+    <h2>Détails Auteur</h2>
+
+    <p><b>Nom :</b> <%= auteur.nom %></p>
+    <p><b>Prénom :</b> <%= auteur.prenom %></p>
+    <p><b>Email :</b> <%= auteur.email %></p>
+
+    <a href="/auteurs" class="btn btn-primary">Retour</a>
+
+  </div>
+
+</div>
+
+<%- include('../../partials/footer') %>

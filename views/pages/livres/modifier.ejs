@@ -1,0 +1,21 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+  <div class="card">
+
+    <h2>Modifier Livre</h2>
+
+    <form method="POST" action="/livres/<%= livre.id %>/modifier">
+
+      <input type="text" name="titre" value="<%= livre.titre %>" required>
+      <input type="text" name="genre" value="<%= livre.genre %>" required>
+
+      <button class="btn btn-primary">Modifier</button>
+
+    </form>
+
+  </div>
+</div>
+
+<%- include('../../partials/footer') %>

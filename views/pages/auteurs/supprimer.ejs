@@ -1,0 +1,16 @@
+<%- include('../../partials/header') %>
+
+<h2>Supprimer un auteur</h2>
+
+<p>Voulez-vous vraiment supprimer cet auteur :</p>
+
+<div class="card">
+  <p><strong><%= auteur.nom %> <%= auteur.prenom %></strong></p>
+</div>
+
+<form action="/auteurs/supprimer/<%= auteur.id %>" method="POST">
+  <button type="submit" class="btn btn-danger">🗑 Oui supprimer</button>
+  <a href="/auteurs" class="btn">Annuler</a>
+</form>
+
+<%- include('../../partials/footer') %>
