@@ -58,7 +58,9 @@ bibliotheque-app/
 └── package.json
 ```
 ---
+## Demonstration video 
 
+---
 ## ⚙️ Prérequis
 
 - Node.js ≥ 18
@@ -69,7 +71,7 @@ bibliotheque-app/
 
 ## 📥 Installation
 
-git clone 
+git clone https://github.com/salmaly-ui/Tp4NodeJs.git
 
 
 npm install  
